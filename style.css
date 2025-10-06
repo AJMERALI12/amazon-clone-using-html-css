@@ -9,7 +9,7 @@
     }
       .logo{
           width: 80px;
-          
+          margin-left: 20px;
           background-image: url("logo.png"); 
           background-size: cover;
           animation: pulse 1s infinite;
@@ -17,69 +17,70 @@
         
         
     .nav{
+        width: 100%;
+       
         background-color: #5a5a5d;
         border:solid black 2px;
-        margin: 5px;
-        text-align: center;
+      
+      
     }
      
     .nav ul{
         border-color: #3c3c3e;
         list-style: none;
-        display: inline-flex;
+        display: flex;
+        flex-wrap: wrap;
+       
     }
     .nav ul li {
         margin: 10px;
         padding: 10px;
-        width: 200px;
         text-align: center;
+        
+
+      
     }
 .nav ul li a{
+ 
+    width: 100%;
     text-decoration: white;
     color: #ededef;
-    text-align: center;
-}
-
-
-.menu-bar{
-    width: 100%;
-    margin-top: 5px;
-    text-align: center;
-    border:solid black 2px;
-
-}
-
-.menu-bar
-{
-    background-color: #464648;
+    align-content: flex-end;
     
+   
 }
-.menu-bar{
-    border-color: rgb(67, 65, 65);
-    text-align: center;
 
-}
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color:rgba(16, 17, 16, 0.89);
-    justify-content: center;
-    
-}
-.menu-bar ul li{
-    width: auto;
-    margin: 5px;
-    padding: 10px;
-    align-items: center;
-    
-}
-.menu-bar ul li a
-{
-text-decoration: white;
-color: #ece5e5;
-justify-content: center;
 
+.menu-bar {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  border: solid black 2px;
+  border-color: rgb(67, 65, 65);
+  background-color: #464648;
 }
+
+.menu-bar ul {
+  display: flex;
+  flex-wrap: wrap; /* helps responsiveness */
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar ul li {
+  margin: 5px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #ece5e5;
+  font-size: 18px;
+}
+
+
 
 
 
@@ -230,7 +231,7 @@ justify-content: center;
     line-height: 1.6;
 }
 .content-2 ul li a{
-    ;
+    width: 100%;
     text-decoration: none;
     color: black;
 }
