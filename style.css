@@ -239,3 +239,11 @@
     background-color: #3c3c3e;
     text-align: center;
 }
+
+button{
+    background-color: wheat;
+        border-radius: 5px;
+        cursor: pointer;
+        color: black;
+        
+}
