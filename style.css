@@ -1,12 +1,9 @@
- * {
-    
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box; 
-      
-     
-    
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
       .logo{
           width: 80px;
           margin-left: 20px;
@@ -51,38 +48,112 @@
 }
 
 
-.menu-bar {
-  width: 100%;
-  margin-top: 5px;
-  text-align: center;
-  border: solid black 2px;
-  border-color: rgb(67, 65, 65);
-  background-color: #464648;
+
+
+.menu-bar{
+    background:#232f3e;
+    padding:12px;
+    position:relative;
 }
 
+/* HAMBURGER */
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 10px;  
+    margin-top: -10px; /* right side */
+ 
+}
+.menu-icon1{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    
+    right: 10px;
+    margin-top: 2px;
+    margin-top: -10px;
+}
+/* HIDE CHECKBOX */
+#menu-toggle{
+ 
+    display:none;
+   
+    
+
+}
+
+/* MENU LIST */
 .menu-bar ul {
-  display: flex;
-  flex-wrap: wrap; /* helps responsiveness */
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
 .menu-bar ul li {
-  margin: 5px;
-  padding: 10px;
+    margin: 5px 10px;
 }
 
 .menu-bar ul li a {
-  text-decoration: none;
-  color: #ece5e5;
-  font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
 }
 
+.menu-bar ul li a:hover {
+    background: #37475a;
+}
 
+/* HAMBURGER MENU */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
 
+/* HIDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
 
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-bar ul {
+        display: none;
+        flex-direction: column;
+        background: #232f3e;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    .menu-bar ul li {
+        width: 100%;
+    }
+
+    .menu-bar ul li a {
+        padding: 12px;
+        border-bottom: 1px solid #37475a;
+    }
+}
 
 
 
