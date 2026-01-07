@@ -47,7 +47,12 @@
    
 }
 
-
+.nav ul li a:hover{
+    background-color: #232f3e;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
 
 
 .menu-bar{
